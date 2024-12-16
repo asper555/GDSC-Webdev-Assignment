@@ -1,0 +1,323 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #0b0319;
+    color: #333;
+    line-height: 1.6;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* Navigation */
+header {
+    background: #333;
+    padding: 10px 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #00b5ff;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 20px;
+    background: #0b0319;
+}
+
+.hero-content {
+    max-width: 50%;
+}
+
+.logo {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+#vreality {
+    font-size: 3rem;
+    font-weight: bold;
+    background: linear-gradient(90deg, #00b5ff, #ff007f);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 20px 0;
+}
+
+.hero p {
+    margin-bottom: 20px;
+    color: #ddd;
+}
+
+.btn-primary {
+    padding: 15px 30px;
+    background: linear-gradient(45deg, #00b5ff, #ff007f);
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-size: 1.2rem;
+}
+
+.btn-primary:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.hero-image img {
+    border-radius: 10px;
+    width: 100%;
+    max-width: 1400px;
+    height: auto;
+}
+
+/* Features Section */
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 40px 0;
+}
+
+.feature-card {
+    text-align: center;
+    background: linear-gradient(45deg, #00b5ff, #ff007f);
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 300px;
+}
+
+.feature-card img {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    border: 5px solid white;
+    background: linear-gradient(45deg, #00b5ff, #ff007f);
+}
+
+.feature-card h3 {
+    margin-top: 10px;
+    color: #fff;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Explore Section */
+.explore {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 40px 20px;
+    background: #0b0319;
+}
+
+.explore-text h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    background: linear-gradient(90deg, #00b5ff, #ff007f);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#explore1 {
+    margin: 20px 0;
+    color: #ddd;
+}
+
+.btn-secondary {
+    padding: 10px 20px;
+    background: linear-gradient(45deg, #00b5ff, #ff007f);
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-size: 1rem;
+}
+
+.btn-secondary:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.explore-image img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.reality {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 40px 20px;
+}
+
+#h2touch {
+    font-size: 2.5rem;
+    font-weight: bold;
+    background: linear-gradient(90deg, #00b5ff, #ff007f);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.reality-image img {
+    border-radius: 10px;
+    max-width: 100%;
+}
+
+#explore2 {
+    margin: 20px 0;
+    color: #ddd;
+}
+
+/* Newsletter Section */
+.newsletter {
+    text-align: center;
+    padding: 40px 20px;
+    background: #222;
+    color: #fff;
+}
+
+.newsletter h3 {
+    margin-bottom: 10px;
+}
+
+#subscribe1 {
+    margin-bottom: 20px;
+}
+
+#subscribe {
+    padding: 10px 40px;
+    font-size: 1.5rem;
+    background: linear-gradient(45deg, #00b5ff, #ff007f);
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s;
+    width: 350px;
+}
+
+#subscribe:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background: #222;
+    color: #fff;
+    padding: 20px 10px;
+}
+
+.footer-links,
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+
+.footer-links a,
+.footer-bottom a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover,
+.footer-bottom a:hover {
+    color: #00b5ff;
+}
+
+.app-buttons img {
+    width: 120px;
+    margin: 10px;
+}
+
+.social-icons a img {
+    width: 40px;
+    margin: 0 10px;
+}
+
+hr {
+    margin: 20px 0;
+    border: 1px solid #444;
+}
+
+.footer-bottom p {
+    font-size: 0.9rem;
+    margin: 10px 0;
+    text-align: center;
+}
+
+/* Download Our App Section */
+.download {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px 0;
+}
+
+.download-text {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.download-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.download-buttons a img {
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.connect{
+    text-align: center;
+}
